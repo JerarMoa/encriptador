@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo de Alura">
+    </header>
+    <main>
+        <section class="principal">
+            <textarea id="textarea" class="ingresar-texto" placeholder="Ingresa el texto aquí"></textarea>
+
+            <div class="solo-minusculas">
+                <img src="img/info.png" alt="imagen de simbolo">
+                <p>Solo letras minúsculas y sin acento</p>
+            </div>
+
+            <div class="botones">
+                <button id="btnEncriptar" class="encriptar">Encriptar</button>
+
+                <button id="btnDesencriptar" class="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="secundario">
+            <img id="munheco" class="munheco" src="img/munheco.png" alt="Imagen muñeco Alura">
+            <div id="noEncontrado" class="no-encontrado">
+                <h3>Ningún texto fue encontrado</h3>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+
+            <div class="encriptado">
+                <textarea class="resultado" id="textoEncriptado"></textarea>
+                <button class="copiar" id="btnCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
